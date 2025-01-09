@@ -1,4 +1,41 @@
 body
 {
     font-family: "The Girl Next Door";
+    color:whitesmoke;
+    background-color:black;
 }
+
+h1, footer a
+{
+    color:fuchsia;
+}
+
+h3
+{
+    color:chartreuse;
+}
+
+.tagline
+{
+    display: flex;
+}
+
+/* .research
+{
+
+}
+
+.madlibs
+{
+
+}
+
+.every-picture
+{
+
+}
+
+.game-on
+{
+
+} */
