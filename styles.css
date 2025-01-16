@@ -41,7 +41,8 @@ h3
 .tagline
 {
     display: flex;
-    padding: 1em;
+    flex: 1;
+    padding: 100px;
 }
 
 /* .research
