@@ -9,6 +9,11 @@ ul
     list-style-type: none;
 }
 
+ul li a
+{
+    text-decoration: none;
+}
+
 img
 {
     max-width: 100%;
@@ -21,11 +26,24 @@ body
     font-family: "The Girl Next Door";
     color:whitesmoke;
     background-color:black;
+    background-image: url(images/full-face.svg), url(images/eyes.svg);
+    background-repeat: no-repeat;
+    background-position: top 5em left 16.75em, bottom 33em right 37.25em;
 }
 
-h1, footer a
+h1
 {
     color:fuchsia;
+    position: relative;
+    bottom: 1em;
+    line-height: 35px;
+    position: relative;
+    top: 0.3em;
+}
+
+footer a:visited, footer a:active, footer a:link
+{
+    color: orange;
 }
 
 h1, h2, footer
@@ -33,7 +51,19 @@ h1, h2, footer
     text-align: center;
 }
 
-h3
+h2
+{
+    padding-left: 6em;
+    padding-right: 6em;
+    padding-bottom: 4em;
+}
+
+h3 
+{
+    color:chartreuse;
+}
+
+a:visited, a:active, a:link
 {
     color:chartreuse;
 }
@@ -41,26 +71,47 @@ h3
 .tagline
 {
     display: flex;
-    flex: 1;
-    padding: 100px;
+    place-content: center;
 }
 
-/* .research
+.research
 {
-
+    transform: rotate(15deg);
+    text-align: center;
+    position: relative;
+    right: 25em;
+    top: 1∫5em;
 }
 
 .madlibs
 {
-
+    transform: rotate(-20deg);
+    position: relative;
+    right: 16em;
+    top: 15em;
+    text-align: center;
 }
 
 .every-picture
 {
-
+    transform: rotate(20deg);
+    position: relative;
+    top: 4em;
+    left: 15em;
+    text-align: center;
 }
 
 .game-on
 {
+    transform: rotate(-15deg);
+    text-align: center;
+    position: relative;
+    bottom: 15em;
+    left: 28em;
+} 
 
-} */
+footer
+{
+    position: relative;
+    bottom: 3em;
+}
