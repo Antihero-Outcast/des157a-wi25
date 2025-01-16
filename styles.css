@@ -14,6 +14,11 @@ ul li a
     text-decoration: none;
 }
 
+ul li a:hover
+{
+    color: fuchsia;
+}
+
 img
 {
     max-width: 100%;
@@ -26,9 +31,32 @@ body
     font-family: "The Girl Next Door";
     color:whitesmoke;
     background-color:black;
-    background-image: url(images/full-face.svg), url(images/eyes.svg);
+    background-image: url(images/full-face.svg);
     background-repeat: no-repeat;
-    background-position: top 5em left 16.75em, bottom 33em right 37.25em;
+    background-position: top 5em left 16.75em;
+}
+
+.leye
+{
+    position: relative;
+    left: 36.75em;
+    top: 1em;
+    animation: eyeanimation1 400ms infinite;
+}
+
+.reye
+{
+    position: relative;
+    left: 46.2em;
+    top: -3em;
+    animation: eyeanimation2 400ms infinite;
+}
+
+.tongue-og
+{
+    position: relative;
+    left: 40.6em;
+    top: 2.5em;
 }
 
 h1
@@ -38,7 +66,13 @@ h1
     bottom: 1em;
     line-height: 35px;
     position: relative;
-    top: 0.3em;
+    top: 0.1em;
+    transition: 0.5s ease-in-out;
+}
+
+h1:hover
+{
+    font-size: 10em;
 }
 
 footer a:visited, footer a:active, footer a:link
@@ -61,6 +95,7 @@ h2
 h3 
 {
     color:chartreuse;
+    font-size: 1.5em;
 }
 
 a:visited, a:active, a:link
@@ -80,7 +115,7 @@ a:visited, a:active, a:link
     text-align: center;
     position: relative;
     right: 25em;
-    top: 15em;
+    top: -10em;
 }
 
 .madlibs
@@ -88,7 +123,7 @@ a:visited, a:active, a:link
     transform: rotate(-20deg);
     position: relative;
     right: 16em;
-    top: 15em;
+    top: -10em;
     text-align: center;
 }
 
@@ -96,8 +131,8 @@ a:visited, a:active, a:link
 {
     transform: rotate(20deg);
     position: relative;
-    top: 4em;
-    left: 15em;
+    top: -22em;
+    left: 17em;
     text-align: center;
 }
 
@@ -106,12 +141,70 @@ a:visited, a:active, a:link
     transform: rotate(-15deg);
     text-align: center;
     position: relative;
-    bottom: 15em;
+    bottom: 41em;
     left: 28em;
 } 
 
 footer
 {
     position: relative;
-    bottom: 3em;
+    bottom: 29.5em;
+}
+
+@keyframes eyeanimation1
+{
+    0%
+    {
+        transform: rotate(0deg);
+        animation-timing-function: ease-in;
+    }
+    25%
+    {
+        transform: rotate(90deg);
+        animation-timing-function: linear;
+    }
+    50%
+    {
+        transform: rotate(180deg);
+        animation-timing-function: linear;
+    }
+    75%
+    {
+        transform: rotate(270deg);
+        animation-timing-function: linear;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes eyeanimation2
+{
+    0%
+    {
+        transform: rotate(360deg);
+        animation-timing-function: ease-in;
+    }
+    25%
+    {
+        transform: rotate(270deg);
+        animation-timing-function: linear;
+    }
+    50%
+    {
+        transform: rotate(180deg);
+        animation-timing-function: linear;
+    }
+    75%
+    {
+        transform: rotate(90deg);
+        animation-timing-function: linear;
+    }
+    100%
+    {
+        transform: rotate(0deg);
+        animation-timing-function: ease-out;
+    }
 }
