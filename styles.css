@@ -26,14 +26,14 @@ img
     display: block;
 }
 
-.homepage, .journal-homepage
+#homepage, #journal-homepage, #post1
 {
     font-family: "The Girl Next Door";
     color:whitesmoke;
     background-color:black;
 }
 
-.homepage
+#homepage
 {
     background-image: url(images/full-face.svg);
     background-repeat: no-repeat;
@@ -211,4 +211,9 @@ footer
         transform: rotate(0deg);
         animation-timing-function: ease-out;
     }
+}
+
+#post1 p, #journal-homepage p
+{
+    width: 60%;
 }
