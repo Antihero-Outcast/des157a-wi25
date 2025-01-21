@@ -217,3 +217,29 @@ footer
 {
     width: 60%;
 }
+
+.journal-nav1 ul
+{
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#journal-homepage header 
+{
+    padding-bottom: 40px;
+    font-style: italic;
+}
+
+#journal-homepage img
+{
+    margin: auto;
+    padding-bottom: 50px;
+} 
+
+#journal-homepage h2
+{
+    padding-top: 30px;
+}
