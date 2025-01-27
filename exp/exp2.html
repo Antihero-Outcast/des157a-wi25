@@ -9,15 +9,57 @@
 <body>
     <header>
         <h1>Experiment 2</h1>
-        <p>Observe what appears on this page by default and after you respond to prompt(s).</p> 
+        <p>Observe what appears on this page by default and after you respond to the prompts.</p> 
     </header>
 
+    <main>
+        <img src="" alt="place-photo">
+        <p id="answer">Please provide an answer to all riddles and view your result.</p>
+    </main>
 
     <script>
-        /* This program prompts the user to answer a riddle, to which they will see 
-           the results of their answer live on the page via messages and images */
+        /* This program prompts the user to answer three riddles, to which they will see 
+           the results of one their answers live on the page via message and image. If they got one of them wrong, the page will reflect this. */
 
+        var riddle1 = prompt("A slender stick, with something in its core, it can conjure things both small and big, to make the impossible real and even more...what am I?", "").toLowerCase();
+        var riddle2 = prompt("Secrets within the leather-bound skin, with words that make immeasurable power begin, turn the pages and with a whispered plea, you can lift a curse or summon a talking tree...what am I?", "").toLowerCase();
+        var riddle3 = prompt("Written with care in ancient script, it allows for casting a spell, one must discover it and depict, to get the job done well...what am I?","").toLowerCase();
 
+        var riddles = [riddle1, riddle2, riddle3];
+        
+        function randomInt(min, max)
+        {
+            return Math.floor((max-min+1) * Math.random()) + min;
+        }
+
+        function magicalGift(riddle)
+        {
+            var img = document.querySelector('img');
+            var answer = document.querySelector('#answer');
+
+            if(riddle === "wand" || riddle === "a wand")
+            {
+                img.setAttribute('src', 'images/wand.png');
+                answer.innerHTML = "You answered all correctly! Here's a wand!";
+            }
+            else if(riddle === "spellbook" || riddle === "a spellbook")
+            {
+                img.setAttribute('src', 'images/spellbook.png');
+                answer.innerHTML = "You answered all correctly! Here's a spellbook!";
+            }
+            else if(riddle === "rune" || riddle === "a rune")
+            {
+                img.setAttribute('src', 'images/runes.png');
+                answer.innerHTML = "You answered all correctly! Here's a rune!";
+            }
+            else
+            {
+                img.setAttribute('src', 'images/wizard.png');
+                answer.innerHTML = "You answered at least one incorrectly...Try again to get them all right, start by refreshing the page!";
+            }
+        }
+
+        magicalGift(riddles[randomInt(0, 2)]);
     </script>
 </body>
 </html>
