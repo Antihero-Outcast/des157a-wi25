@@ -213,9 +213,16 @@ footer
     }
 }
 
-#posts p, #journal-homepage p
+#posts, #journal-homepage
 {
     width: 60%;
+    margin: auto;
+}
+
+#journal-homepage footer 
+{
+    top: 80px;
+    padding-bottom: 40px;
 }
 
 .journal-nav1 ul
@@ -241,7 +248,7 @@ footer
 
 #journal-homepage h2
 {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 #design-v1 #digital-sketches
