@@ -219,6 +219,11 @@ footer
     margin: auto;
 }
 
+#posts p
+{
+    padding-bottom: 20px;
+}
+
 #journal-homepage footer 
 {
     top: 80px;
