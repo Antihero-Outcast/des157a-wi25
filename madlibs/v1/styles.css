@@ -11,13 +11,20 @@ a
 .line-segment
 {
     text-decoration: underline;
+    font-size: 24px;
 }
 
 body
 {
     background-image: url(images/glowing-wood.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+#exit
+{
+    width: 55px;
+    height: 55px;
 }
 
 #exit ul li a:link, #exit ul li a:visited, #exit ul li a:active
@@ -25,26 +32,43 @@ body
     color:antiquewhite;
 }
 
-header, h2, h3, h4
+h1, h2, h3, h4
 {
     font-family: "MedievalSharp"
 }
 
-header span, h2 span, h3 span
+h1 span, h2 span, h3 span
 {
     font-family: "harbour-decor", sans-serif;
 }
 
-header span
+h1 span
 {
     font-size: 80px;
 }
 
-header
+h2 span
+{
+    font-size: 72px;
+}
+
+h3 span
+{
+    font-size: 32px;
+}
+
+h1
 {
     position: absolute;
-    top: 5%;
-    left: 90%;
+    bottom: 81%;
+    left: 20%;
+    font-size: 48px;
+}
+
+h3
+{
+    padding-top: 20px;
+    font-size: 24px;
 }
 
 #exit, #overlay .close
@@ -63,11 +87,15 @@ header
 #content-line
 {
     display: flex;
+    gap: 20px;
+    justify-content: center;
+    height: 725px;
 }
 
 #spellbook
 {
     color: #BF882C;
+    position: relative;
 }
 
 #spellbook-title
@@ -78,6 +106,18 @@ header
 #madlibs
 {
     color: black;
+    position: relative;
+    left: 70px;
+}
+
+form
+{
+    position: relative;
+    bottom: 83%;
+    left: 4%;
+    width:336px;
+    line-height: 27px;
+    font-size: 16px;
 }
 
 form ul li
@@ -95,14 +135,16 @@ input
 { 
     border: 10px solid transparent;
     padding: 0;
-    border-image: url(images/entry-border.png) 60 stretch;
+    border-image: url(images/entry-border.png) 14 stretch;
 }
 
 .page-nav
 {
     display: flex;
-    gap: 125px;
+    gap: 131px;
     position: absolute;
+    bottom: 14%;
+    right: 7%;
 }
 
 .hidden
@@ -146,10 +188,19 @@ input
 
 #wand
 {
-
+    position: relative;
+    top: 30px;
+    right: 50px;
 }
 
-#wand:hover
+#spellbook-title
 {
-    
+    position: absolute;
+    top: 17%;
+    left: 22.2%;
+    width: 325px;
+    line-height: 50px;
+    text-align: center;
+    transform: rotate(2.9deg);
+    font-size: 22.5px;
 }
