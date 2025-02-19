@@ -1,0 +1,219 @@
+ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.line-segment
+{
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+body
+{
+    background-image: url(images/glowing-wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#exit
+{
+    width: 55px;
+    height: 55px;
+}
+
+#exit ul li a:link, #exit ul li a:visited, #exit ul li a:active
+{
+    color:antiquewhite;
+}
+
+h1, h2, h3, h4
+{
+    font-family: "MedievalSharp"
+}
+
+h1 span, h2 span, h3 span
+{
+    font-family: "harbour-decor", sans-serif;
+}
+
+h1 span
+{
+    font-size: 80px;
+}
+
+h2 span
+{
+    font-size: 72px;
+}
+
+h3 span
+{
+    font-size: 32px;
+}
+
+h1
+{
+    position: absolute;
+    bottom: 81%;
+    left: 20%;
+    font-size: 48px;
+}
+
+h3
+{
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+#exit, #overlay .close
+{
+    font-family: "alketa demo";
+    transition: text-shadow ease-in-out 0.25s;
+    transition: font-size ease-in-out 0.25s;
+}
+
+#exit:hover, #overlay .close:hover
+{
+    text-shadow: 2px 2px 5px antiquewhite;
+    font-size: 18px;
+}
+
+#content-line
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    height: 725px;
+}
+
+#spellbook
+{
+    color: #BF882C;
+    position: relative;
+}
+
+#spellbook-title
+{
+    position: absolute;
+}
+
+#madlibs
+{
+    color: black;
+    position: relative;
+    left: 70px;
+}
+
+#pg1, #pg2, #pg3
+{
+    position: absolute;
+    bottom: 18.75%;
+    left: 4%;
+    width:336px;
+    line-height: 27px;
+    font-size: 16px;
+}
+
+form ul li
+{
+    font-family: "Carrois Gothic SC";
+    padding: 7.5px;
+}
+
+input
+{
+    background: transparent;
+    position:relative;
+    left: 35px;
+}
+
+.border-img 
+{ 
+    border: 10px solid transparent;
+    padding: 0;
+    border-image: url(images/entry-border.png) 14 stretch;
+}
+
+#page-nav1, #page-nav2, #page-nav3
+{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    position: absolute;
+    bottom: 13%;
+    left: 45%;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.visible
+{
+    display: block;
+}
+
+#overlay
+{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#overlay div
+{
+    display: flex;
+}
+
+#overlay #preface, #overlay #contents
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 32.35vw;
+    height: 59.67vh;
+    font-family: "Eagle Lake"
+}
+
+#preface p span
+{
+    font-size: 16px;
+}
+
+#contents ul li span
+{
+    font-family: "MedievalSharp";
+}
+
+#wand
+{
+    position: relative;
+    top: 30px;
+    right: 50px;
+}
+
+#spellbook-title
+{
+    position: absolute;
+    top: 17%;
+    left: 22.2%;
+    width: 325px;
+    line-height: 50px;
+    text-align: center;
+    transform: rotate(2.9deg);
+    font-size: 22.5px;
+}
+
+#look-inside
+{
+
+}

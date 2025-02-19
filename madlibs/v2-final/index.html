@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlibs V1</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/kho6oqn.css">
+    <link href="https://db.onlinewebfonts.com/c/bcd6f97f75846d7c7237799c0a425cb4?family=alketa+demo" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav id="exit">
+                <ul>
+                    <li><a href="../../index.html">EXIT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="content-line">
+            <img src="images/wand-unlit.png" width="144" height="604" alt="wand-unlit" id="wand">
+            <div id="spellbook">
+                <img src="images/spellbook.png" alt="spellbook">
+                <div id="spellbook-title">
+                    <h2><span>T</span>HE <br><span class="line-segment">_________</span> <span class="line-segment">_________</span> SPELLBOOK <br> FOR <br> <span class="line-segment">____________</span></h2>
+                    <h3><span>B</span>Y <span class="line-segment">_________</span></h3>
+                </div>
+            </div>
+
+            <div id="madlibs">
+                <h1><span>M</span>ADLIBS</h1>
+                <img src="images/parchment.png" alt="parchment">
+                
+                <section>
+                    <form id="pg1" class="visible">
+                        <ul>
+                            <li>
+                                <label for="1">1. A plural noun for magical people</label><br>
+                                <input type="text" id="1" class="border-img" value="">
+                            </li>
+
+                            <li>
+                                <label for="2">2. An adjective to describe the book</label><br>
+                                <input type="text" id="2" class="border-img" value="">
+                            </li>
+
+                            <li>
+                                <label for="3">3. 1-3 nouns, absolutely random things</label><br>
+                                <input type="text" id="3" class="border-img" value="">
+                            </li>
+
+                            <li>
+                                <label for="4">4. A name for you, the esteemed author</label><br>
+                                <input type="text" id="4" class="border-img" value="">
+                            </li>
+
+                            <li>
+                                <label for="5">5. A superlative describing the best or worst magician</label><br>
+                                <input type="text" id="5" class="border-img" value="">
+                            </li>
+                        </ul>
+                    </form>
+                </section>
+
+                <section>
+                    <form id="pg2" class="hidden">
+                            <ul>
+                                <li>
+                                    <label for="6">6. An existential action verb</label><br>
+                                    <input type="text" id="6" class="border-img" value="">
+                                </li>
+    
+                                <li>
+                                    <label for="7">7. A proper noun, a place of your own creation</label><br>
+                                    <input type="text" id="7" class="border-img" value="">
+                                </li>
+    
+                                <li>
+                                    <label for="8">8. A name for a random dude who invented an antidote</label><br>
+                                    <input type="text" id="8" class="border-img" value="">
+                                </li>
+    
+                                <li>
+                                    <label for="9">9. A silly action verb ending in -ing</label><br>
+                                    <input type="text" id="9" class="border-img" value="">
+                                </li>
+    
+                                <li>
+                                    <label for="10">10. A plural noun for fantastical creatures or forbidden items</label><br>
+                                    <input type="text" id="10" class="border-img" value="">
+                                </li>
+                            </ul>
+                        </form>
+                    </section>
+
+                    <section>
+                        <form id="pg3" class="hidden">
+                                <ul>
+                                    <li>
+                                        <label for="11">11. An official establishment</label><br>
+                                        <input type="text" id="11" class="border-img" value="">
+                                    </li>
+        
+                                    <li>
+                                        <label for="12">12. A noun for a mythological creature, deity, or urban legend</label><br>
+                                        <input type="text" id="12" class="border-img" value="">
+                                    </li>
+        
+                                    <li>
+                                        <label for="13">13. A singular/plural noun for a dangerous or cruel entity</label><br>
+                                        <input type="text" id="13" class="border-img" value="">
+                                    </li>
+        
+                                    <li>
+                                        <label for="14">4. A *small* description of mass hysteria</label><br>
+                                        <input type="text" id="14" class="border-img" value="">
+                                    </li>
+        
+                                    <li>
+                                        <label for="15">5. A noun for an unwanted problem</label><br>
+                                        <input type="text" id="15" class="border-img" value="">
+                                    </li>
+                                </ul>
+                            </form>
+                        </section>
+
+                <div id="page-nav1">
+                    <h4>1 of 3</h4> 
+                    <a href="#" class="next">
+                        <img src="images/rarrow.svg" alt="rarrow">
+                    </a>
+                </div>
+
+                <div id="page-nav2">
+                    <a href="#" class="prev">
+                        <img src="images/larrow.svg" alt="larrow" class="hidden">
+                    </a>
+                    <h4 class="hidden">2 of 3</h4> 
+                    <a href="#">
+                        <img src="images/rarrow.svg" alt="rarrow" class="hidden">
+                    </a>
+                </div>
+
+                <div id="page-nav3">
+                    <a href="#" class="prev">
+                        <img src="images/larrow.svg" alt="larrow" class="hidden">
+                    </a>
+                    <h4 class="hidden">3 of 3</h4> 
+                    <a href="#" id="finish">
+                        <input type="submit" value="FINISH" class="hidden">
+                    </a>
+                </div>
+            </div> 
+        </div>
+
+        <section id="overlay" class="hidden">
+            <img src="images/madlib-overlay.png" alt="overlay">
+            <div>
+                <article id="preface">
+                    <h2><span>P</span>REFACE</h2>
+                    
+                    <p>
+                        This magical index is meant for  who are intrigued in  for the secret behind how to become the 
+                        wizard in a line of generations. DO NOT UNDER ANY CIRCUMSTANCES let anyone else possess this book unless you want to 
+                         in the dark abyss of .
+                    </p>
+
+                    <p>
+                        Sincerely,
+                        <span>Grandwizard Salami</span>
+                    </p>
+                </article>
+
+                <article id="contents">
+                    <h2><span>C</span>ONTENTS</h2>
+
+                    <ul>
+                        <li><span>I. Antidote</li>
+                        <li><span>II.</span> Banish  from a </li>
+                        <li><span>III.</span> Protect a  from </li>
+                        <li><span>IV.</span> Break a Curse of </li>
+                        <li><span>V.</span> To Brush Away Your </li>
+                        <li><span>VI.</span> Potion of </li>
+                        <li><span>VII.</span>  Charm</li>
+                        <li><span>VIII.</span>  Chaos</li>
+                        <li><span>IX.</span> Eye of </li>
+                        <li><span>X.</span> Make Your  Disappear</li>
+                    </ul>
+                </article>
+            </div>
+            <button class="close">X</button>
+        </section>
+    </main>
+    <footer>
+        <button id="look-inside" class="hidden">LOOK INSIDE</button>
+    </footer>
+</body>
+</html>
