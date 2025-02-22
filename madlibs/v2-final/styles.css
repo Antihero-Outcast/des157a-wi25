@@ -286,6 +286,7 @@ input
 {
     font-size: 44px;
     text-align: center;
+    font-family: "MedievalSharp";
 }
 
 .signature
@@ -307,6 +308,7 @@ input
 {
     font-size: 44px;
     text-align: center;
+    font-family: "MedievalSharp";
 }
 
 #preface p, #contents ul
