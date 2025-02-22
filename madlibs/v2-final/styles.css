@@ -10,7 +10,12 @@ a
 
 .n1, .n2, .n3, .n4
 {
-    text-decoration: underline;
+    font-size: 33px;
+    font-family: "MedievalSharp";
+}
+
+.n4
+{
     font-size: 24px;
 }
 
@@ -19,6 +24,7 @@ body
     background-image: url(images/glowing-wood.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "MedievalSharp"
 }
 
 #exit
@@ -31,11 +37,6 @@ body
 #exit ul li a:link, #exit ul li a:visited, #exit ul li a:active, .close:link, .close:visited, .close:active
 {
     color:antiquewhite;
-}
-
-h1, h2, h3, h4, #look-inside
-{
-    font-family: "MedievalSharp"
 }
 
 h1 span, h2 span, h3 span
@@ -72,6 +73,11 @@ h3
     font-size: 24px;
 }
 
+h4
+{
+    width: 50px;
+}
+
 #exit, .close
 {
     font-family: "alketa demo";
@@ -105,11 +111,6 @@ h3
     position: relative;
 }
 
-#spellbook-title
-{
-    position: absolute;
-}
-
 #madlibs
 {
     color: black;
@@ -121,7 +122,7 @@ h3
 {
     position: absolute;
     bottom: 18.75%;
-    left: 4%;
+    left: 5%;
     width:336px;
     line-height: 27px;
     font-size: 16px;
@@ -136,7 +137,7 @@ form ul li
 input
 {
     background: transparent;
-    position:relative;
+    position: relative;
     left: 35px;
 }
 
@@ -151,10 +152,26 @@ input
 {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 110px;
     position: absolute;
+}
+
+#page-nav1
+{
     bottom: 13%;
     left: 45%;
+}
+
+#page-nav2
+{
+    bottom: 13%;
+    left: 7.5%;
+}
+
+#page-nav3
+{
+    bottom: 13%;
+    left: 7.5%;
 }
 
 .hidden
@@ -203,11 +220,6 @@ input
     font-size: 16px;
 }
 
-#contents ul li span
-{
-    font-family: "MedievalSharp";
-}
-
 #wand
 {
     position: relative;
@@ -218,9 +230,9 @@ input
 #spellbook-title
 {
     position: absolute;
-    top: 17%;
-    left: 22.2%;
-    width: 325px;
+    top: 12%;
+    left: 28%;
+    width: 270px;
     line-height: 50px;
     text-align: center;
     transform: rotate(2.9deg);
@@ -264,6 +276,12 @@ input
     line-height: 50px;
 }
 
+#preface .n1, #preface .n4
+{
+    font-size: 16px;
+    font-family: "Eagle Lake";
+}
+
 #preface h2
 {
     font-size: 44px;
@@ -303,4 +321,18 @@ input
     bottom: 100px;
     right: 75px;
     width: 80%;
+}
+
+.finish
+{
+    position: absolute;
+    top: 20px;
+    left: 265px;
+    transition: font-size ease-in-out 0.25s;
+}
+
+
+.finish:hover
+{
+    font-size: 20px;
 }
