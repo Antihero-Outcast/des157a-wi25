@@ -2,6 +2,8 @@
 {
     'use strict';
 
+    console.log('reading js');
+
     // item interactions
     const wand = document.querySelector('#wand');
     const title = document.querySelector('#spellbook-title h2');
@@ -129,8 +131,10 @@
         pg2Rarrow.className = "visible";
     });
 
-    pg3Finish.addEventListener('click', function()
+    pg3Finish.addEventListener('click', function(event)
     {
+        event.preventDefault();
+        
         const entry1 = document.querySelector('#one').value;
         const entry2 = document.querySelector('#two').value;
         const entry3 = document.querySelector('#three').value;
