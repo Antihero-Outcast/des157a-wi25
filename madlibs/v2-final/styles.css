@@ -323,16 +323,16 @@ input
     width: 80%;
 }
 
-.finish
+#finishBtn
 {
     position: absolute;
     top: 20px;
-    left: 265px;
+    left: 300px;
     transition: font-size ease-in-out 0.25s;
 }
 
 
-.finish:hover
+#finishBtn:hover
 {
     font-size: 20px;
 }

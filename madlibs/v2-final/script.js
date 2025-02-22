@@ -20,17 +20,16 @@
     const pg2Prev = document.querySelector('#page-nav2 .prev');
     const pg2Next = document.querySelector('#page-nav2 .next');
     const pg3Prev = document.querySelector('#page-nav3 .prev');
-    const pg3Finish = document.querySelector('#page-nav3 .finish');
+    const finishBtn = document.querySelector('#page-nav3 #finishBtn')
 
     // page navs visuals
     const pg1num = document.querySelector('#page-nav1 h4');
-    const pg1Rarrow = document.querySelector('#page-nav1 #rarrow');
-    const pg2Larrow = document.querySelector('#page-nav2 #larrow');
+    const pg1Rarrow = document.querySelector('#page-nav1 #rarrow1');
+    const pg2Larrow = document.querySelector('#page-nav2 #larrow2');
     const pg2num = document.querySelector('#page-nav2 h4');
-    const pg2Rarrow = document.querySelector('#page-nav2 #rarrow');
-    const pg3Larrow = document.querySelector('#page-nav3 #larrow');
+    const pg2Rarrow = document.querySelector('#page-nav2 #rarrow2');
+    const pg3Larrow = document.querySelector('#page-nav3 #larrow3');
     const pg3num = document.querySelector('#page-nav3 h4');
-    const finishBtn = document.querySelector('#page-nav3 #finishBtn')
 
     // overlay
     const spellbook = document.querySelector('#overlay');
@@ -131,7 +130,7 @@
         pg2Rarrow.className = "visible";
     });
 
-    pg3Finish.addEventListener('click', function(event)
+    finishBtn.addEventListener('click', function(event)
     {
         event.preventDefault();
         
