@@ -126,6 +126,6 @@
   top: 180px;
   left: 100px;
   animation: flash 3s infinite;
-  opacity: 0;
+  opacity: 1;
 }
   
