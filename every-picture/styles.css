@@ -1,0 +1,135 @@
+.uc-container 
+{
+    position: relative;
+    width: 300px; 
+    height: 300px; 
+}
+  
+.unicorn-cat 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: fadeMove 5s forwards;
+}
+
+@keyframes fadeMove 
+{
+    0% 
+    {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+        filter: brightness(1);
+    }
+    50% 
+    {
+        opacity: 0.5;
+        transform: translate(50vw, 50vh) scale(1.5);
+        filter: brightness(2);
+    }
+    100% 
+    {
+        opacity: 0;
+        transform: translate(100vw, 100vh) scale(0);
+        filter: brightness(3);
+    }
+}
+
+.flag-container 
+{
+    width: 476px;
+    height: 333px; 
+    overflow: hidden;
+}
+  
+.flag
+{
+    width: 100%;
+    height: 100%;
+    animation: wave 5s infinite;
+}
+  
+@keyframes wave 
+{
+    0% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(-10px) translateY(5px); }
+    50% { transform: translateX(0) translateY(10px); }
+    75% { transform: translateX(10px) translateY(5px); }
+    100% { transform: translateX(0) translateY(0); }
+}
+  
+.tardis-container 
+{
+    width: 332px; 
+    height: 530px; 
+}
+  
+.tardis:hover
+{
+    width: 100%;
+    height: 100%;
+    animation: spinFade 3s forwards;
+}
+  
+@keyframes spinFade 
+{
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+  
+.loki-container {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+  }
+  
+  .loki-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .green-aura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0,255,0,0.5), transparent);
+    animation: auraExpand 5s forwards;
+  }
+  
+  @keyframes auraExpand {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+  }
+  
+.chihuahua-container {
+  position: relative;
+  display: inline-block;
+}
+
+.chihuahua {
+  width: 300px; /* Adjust as needed */
+  height: auto;
+}
+
+.speech-bubble {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+}
