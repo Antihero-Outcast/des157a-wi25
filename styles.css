@@ -315,3 +315,37 @@ span
 {
     color: fuchsia;
 }
+
+#game-on-comps
+{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+#game-design-v1 img
+{
+    margin: auto;
+}
+
+#game-design-v1 footer
+{
+    top: 0;
+    padding-top: 75px;
+}
+
+#game-design-v1 h2
+{
+    padding: 50px;
+}
+
+#game-design-v1 #drawings
+{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
