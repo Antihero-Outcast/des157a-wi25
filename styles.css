@@ -353,6 +353,7 @@ span
 .new-comps
 {
     display: flex;
+    gap: 20px;
     justify-content: center;
     padding-bottom: 50px;
     padding-top: 20px;
