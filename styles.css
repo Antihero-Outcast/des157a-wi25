@@ -349,3 +349,11 @@ span
     padding-bottom: 50px;
     padding-top: 20px;
 }
+
+.new-comps
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
