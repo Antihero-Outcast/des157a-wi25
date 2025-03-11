@@ -1,0 +1,216 @@
+body
+{
+    background: url(images/backgrounds/p1r1.jpg) no-repeat center center fixed;
+    background-color: black;
+    position: relative;
+    font-family: "Jersey 10";
+    color: white;
+    width: 1200px;
+    height: 750px;
+    overflow: hidden;
+}
+
+#alert-msg
+{
+    position: absolute;
+    display: block;
+    top: 49%;
+    left: 49%;
+}
+
+#ok
+{
+    position: absolute;
+    left: 43.25%;
+    bottom: 3%;
+    color: #ff000ddf;
+    font-size: 20px;
+    width: 12%;
+    text-align: center;
+}
+
+#ok:hover
+{
+    background-color: #ff000ddf;
+    color: #CFD7A5;
+}
+
+.success-rates
+{
+    position: absolute;
+    color: white;
+    display: flex;
+    top: 26.5%;
+    left: 43.4%;
+    gap: 369px;
+}
+
+.player-turn
+{
+    position: absolute;
+    top: 42%;
+    left: 55.25%;
+    font-size: 24px;
+}
+
+#start
+{
+    position: absolute;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 32px;
+    top: 67%;
+    left: 57.75%;
+}
+
+#start:hover
+{
+    color: #47CDD1;
+}
+
+#exit
+{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    top: 77%;
+    left: 33%;
+    z-index: 1;
+}
+
+#exit-game
+{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#exit-game:hover
+{
+    color: #47CDD1;
+}
+
+header
+{
+    position: relative;
+    top: 1%;
+    left: 53%;
+    font-size: 32px;
+    width: 550px;
+    height: 20px;
+    letter-spacing: 2px;
+    color: #47CDD1;
+}
+
+#guide
+{
+    position: absolute;
+    top: 18%;
+    left: 87.1%;
+    z-index: 1;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 45.5%;
+    font-family: "The Girl Next Door";
+}
+
+footer a
+{
+    color: orange;
+    text-decoration: none;
+}
+
+#overlay
+{
+    position: fixed;
+    top: 21.05%;
+    left: 26.58%;
+    width: 688px;
+    height: 485px;
+    background: rgba(0, 0, 0, 0.8); 
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#visa-card
+{
+    position: absolute;
+    top: 22%;
+    left: 33.5%;
+}
+
+.approve-deny
+{
+    display: flex;
+    gap: 35px;
+    position: absolute;
+    top: 76%;
+    left: 68.5%;
+}
+
+#approve-btn
+{
+    background: none;
+    border: none;
+    position: relative;
+}
+
+#deny-btn
+{
+    background: none;
+    border: none;
+    position: relative;
+
+}
+
+#approve p
+{
+    position: absolute;
+    top: 63%;
+    left: 11%;
+}
+
+#approve p:hover
+{
+    color: #4AC628;
+}
+
+#deny p:hover
+{
+    color: #C62828;
+}
+
+#deny p
+{
+    position: absolute;
+    top: 63%;
+    left: 73.5%;
+}
+
+#timer-circle
+{
+    position: relative;
+}
+
+#seconds
+{
+    position: absolute;
+    top: -48%;
+    left: 20%;
+    font-size: 64px;
+}
+
+#timer
+{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
