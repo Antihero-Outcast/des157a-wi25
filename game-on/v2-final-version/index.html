@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME ON!</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Jersey+25&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>GAME ON!</h1>
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="alert-msg">
+                <img src="images/alert-msg.png" alt="alert-msg">
+                <h4 id="ok">OK</h4>
+            </div>
+
+            <div class="success-rates">
+                <p id="p1-success-rate">--%</p>
+                <p id="p2-success-rate">--%</p>
+            </div>
+
+            <p class="player-turn">PLAYER 1'S TURN</p>
+            <button id="start">START</button>
+
+            <div id="exit">
+                <img src="images/lines/arrow1.svg" alt="arrow1" class="arrow">
+                <a href="../../index.html" id="exit-game">EXIT GAME</a>
+            </div>
+            
+            <div>
+                <img src="images/guide/guide-collapsed.png" alt="guide" id="guide">
+            </div>
+        </div>
+
+        <div id="overlay">
+            <img id="visa-card" src="images/visa-ids/p1c1.png" alt="p1c1">
+
+            <div class="approve-deny">
+                <div id="approve">
+                    <button id="approve-btn">
+                        <img src="images/buttons/approve.png" alt="approve">
+                    </button>
+                    <p>APPROVE</p> 
+                </div>
+
+                <div id="deny">
+                    <button id="deny-btn">
+                        <img src="images/buttons/deny.png" alt="approve">
+                    </button>
+                    <p>DENY</p>
+                </div>
+            </div>
+
+            <div id="timer">
+                <img id="timer-circle" src="images/lines/timer-circle.svg" alt="timer-circle">
+                <p id="seconds">10S</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Designed by Salimah Rogers
+            <a href="mailto:&#115;&#122;&#114;&#111;&#103;&#101;&#114;&#115;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#115;&#122;&#114;&#111;&#103;&#101;&#114;&#115;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></p>
+    </footer>
+</body>
+</html>
