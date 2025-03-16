@@ -55,6 +55,15 @@ body
     font-size: 24px;
 }
 
+#game
+{
+    position: absolute;
+    top: 42%;
+    left: 53%;
+    font-size: 24px;
+    display: none;
+}
+
 #start
 {
     position: absolute;

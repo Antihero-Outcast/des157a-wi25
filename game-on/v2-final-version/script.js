@@ -4,7 +4,6 @@
     console.log('reading js');
 
     // variables
-
     const start = document.querySelector('#start');
     const exit = document.querySelector('#exit');
     const exitImg = document.querySelector('#exit img');
@@ -13,7 +12,7 @@
     const approve = document.querySelector('#approve');
     const deny = document.querySelector('#deny');
     // const gameControl = document.querySelector('#gamecontrol');
-    // const game = document.querySelector('#game');
+    const game = document.querySelector('#game');
     // const actionArea = document.querySelector('#actions')
     const timer = document.querySelector('#timer');
     const boDY = document.querySelector('body');
@@ -22,6 +21,8 @@
     let p1SuccessRate = document.querySelector('#p1-success-rate');
     let p2SuccessRate = document.querySelector('#p2-success-rate');
     const playerTurn = document.querySelector('.player-turn');
+    const ruffledPapers = document.querySelector('#guide-sound');
+    const nextAudio = document.querySelector('#NEXT');
 
     const gameData = {
         assessment: ['approve', 'deny'], // Possible choices
@@ -73,6 +74,7 @@
 
     guide.addEventListener('click', function()
     {
+        ruffledPapers.play();
         guide.setAttribute('src', 'images/guide/guide-open.png');
     });
 
@@ -87,6 +89,7 @@
     });
 
     start.addEventListener('click', function() {
+        nextAudio.play();
         start.style.display = 'none'; // Hide start button
         setTurn(); // Start the next turn
     }); 
@@ -113,18 +116,17 @@
         if (isCorrect) {
             gameData.successRate[gameData.index] = Math.min(gameData.successRate[gameData.index] + 5, 100);
             visaCard.classList.add("correct-aura");
-            playSound("correct");
         } else {
             gameData.successRate[gameData.index] -= 10;
             visaCard.classList.add("incorrect-aura");
-            playSound("incorrect");
         }
     
         // Update displayed success rates
         updateSuccessRateDisplay();
     
         setTimeout(() => {
-            visaCard.classList.remove("correct-aura", "incorrect-aura"); // Remove aura
+            visaCard.classList.remove("correct-aura"); // Remove aura
+            visaCard.classList.remove("incorrect-aura");
             overlay.style.display = "none"; // Close overlay
     
             switchTurn(); // Move to the next player properly
@@ -137,7 +139,7 @@
     
         successRates.forEach((rate, index) => {
             let success = gameData.successRate[index];
-            rate.textContent = `${success}%`;
+            rate.innerHTML = `${success}%`;
     
             if (success > 75) {
                 rate.style.color = "green";
@@ -148,21 +150,16 @@
             }
         });
     }      
-    
-    // function playSound(type) {
-    //     let sound = document.getElementById(type === "correct" ? "correct-sound" : "incorrect-sound");
-    //     sound.play();
-    // }    
-      
+
     // Timer fixed to use gameData.timer
     function startTimer() {
         let timeLeft = gameData.timer; // Use gameData.timer for each round's countdown
-        let timerDisplay = document.getElementById("seconds");
-        timerDisplay.textContent = `${timeLeft}s`;
+        let timerDisplay = document.querySelector("seconds");
+        timerDisplay.innerHTML = `${timeLeft}s`;
         
         let countdown = setInterval(() => {
             timeLeft--;
-            timerDisplay.textContent = `${timeLeft}s`;
+            timerDisplay.innerHTML = `${timeLeft}s`;
         
             if (timeLeft <= 0) {
                 clearInterval(countdown);
@@ -181,7 +178,7 @@
         overlay.style.display = "flex"; // Show overlay with applicant info
         
         // Update player turn
-        playerTurn.textContent = `${gameData.players[gameData.index].toUpperCase()}'S TURN`;
+        playerTurn.innerHTML = `${gameData.players[gameData.index].toUpperCase()}'S TURN`;
 
         startTimer(); // Start the timer
     }
@@ -207,12 +204,11 @@
         
         // Show the start button for the next player
         start.style.display = "block";
-        playerTurn.textContent = `${gameData.players[gameData.index].toUpperCase()}, PRESS START TO CONTINUE`;
     }
     
     function endGame() {
         overlay.style.display = "none"; // Hide visa overlay
-        playerTurn.textContent = "GAME OVER!";
+        playerTurn.innerHTML = "GAME OVER!";
     
         let winner;
         if (gameData.successRate[0] > gameData.successRate[1]) {
@@ -223,6 +219,8 @@
             winner = "IT'S A TIE!";
         }
     
+        playerTurn.style.display = 'none'; 
+        game.style.display = 'block';
         game.innerHTML = `<h2>${winner}</h2><button id="restart">PLAY AGAIN</button>`;
     
         document.getElementById("restart").addEventListener("click", function() {
