@@ -278,15 +278,23 @@ footer
     padding-top: 50px;
 }
 
-#design-v1 #digital-sketches
+#design-v1 #digital-sketches, #digital-sketch, #sketch
 {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
     padding-bottom: 50px;
     padding-top: 20px;
-
 }
+
+#digital-sketch p, #sketch p
+{
+    padding: 0;
+    width: 30%;
+    line-height: 25px;
+}
+
+
 
 #design-v1 #sketch-drawing
 {
