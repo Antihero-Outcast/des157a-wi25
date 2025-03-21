@@ -290,11 +290,9 @@ footer
 #digital-sketch p, #sketch p
 {
     padding: 0;
-    width: 30%;
+    width: 40%;
     line-height: 25px;
 }
-
-
 
 #design-v1 #sketch-drawing
 {
@@ -311,7 +309,6 @@ footer
 #design-v1 footer
 {
     top: 0;
-
 }
 
 #design-v1 h2
