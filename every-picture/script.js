@@ -1,60 +1,81 @@
 (function()
 {
-   const openPod1Btn = document.querySelector("#op1");
-   const openPod2Btn = document.querySelector("#op2");
-   const openPod3Btn = document.querySelector("#op3");
-   const openPod4Btn = document.querySelector("#op4");   
-   const openPod5Btn = document.querySelector("#op5");
-   const closeBtn = document.querySelector(".close");
-   const pod1 = document.querySelector(".pod1");
-   const pod2 = document.querySelector(".pod2");
-   const pod3 = document.querySelector(".pod3");
-   const pod4 = document.querySelector(".pod4");
-   const pod5 = document.querySelector(".pod5");
+   const openPod1Btn = document.querySelector("#op-one");
+   const openPod2Btn = document.querySelector("#op-two");
+   const openPod3Btn = document.querySelector("#op-three");
+   const openPod4Btn = document.querySelector("#op-four");   
+   const openPod5Btn = document.querySelector("#op-five");
+   const closeBtn1 = document.querySelector("#close-one");
+   const closeBtn2 = document.querySelector("#close-two");
+   const closeBtn3 = document.querySelector("#close-three");
+   const closeBtn4 = document.querySelector("#close-four");
+   const closeBtn5 = document.querySelector("#close-five");
    
-   pod1.addEventListener('click', function()
+   const ldrOverlay = document.querySelector("#ldr-overlay");
+   const ucOverlay = document.querySelector("#uc-overlay");
+   const dwOverlay = document.querySelector("#dw-overlay");
+   const tOverlay = document.querySelector("#t-overlay");
+   const tImg = document.querySelector("#t-overlay img")
+   const lOverlay = document.querySelector("#l-overlay");
+   const lImg = document.querySelector("#l-overlay img");
+
+   openPod1Btn.addEventListener('click', function()
    {
-      openPod1Btn.style.display = 'block'
-      openPod2Btn.style.display = 'none'
-      openPod3Btn.style.display = 'none'
-      openPod4Btn.style.display = 'none'
-      openPod5Btn.style.display = 'none'
-   });
-   
-   pod2.addEventListener('click', function()
-   {
-      openPod1Btn.style.display = 'none'
-      openPod2Btn.style.display = 'block'
-      openPod3Btn.style.display = 'none'
-      openPod4Btn.style.display = 'none'
-      openPod5Btn.style.display = 'none'
+      ucOverlay.className = 'visible';
    });
 
-   pod3.addEventListener('click', function()
+   openPod2Btn.addEventListener('click', function()
    {
-      openPod1Btn.style.display = 'none'
-      openPod2Btn.style.display = 'none'
-      openPod3Btn.style.display = 'block'
-      openPod4Btn.style.display = 'none'
-      openPod5Btn.style.display = 'none'
+      dwOverlay.className = 'visible';
    });
 
-   pod4.addEventListener('click', function()
+   openPod3Btn.addEventListener('click', function()
    {
-      openPod1Btn.style.display = 'none'
-      openPod2Btn.style.display = 'none'
-      openPod3Btn.style.display = 'none'
-      openPod4Btn.style.display = 'block'
-      openPod5Btn.style.display = 'none'
+      lOverlay.className = 'visible';
    });
 
-   pod5.addEventListener('click', function()
+   openPod4Btn.addEventListener('click', function()
    {
-      openPod1Btn.style.display = 'none'
-      openPod2Btn.style.display = 'none'
-      openPod3Btn.style.display = 'none'
-      openPod4Btn.style.display = 'none'
-      openPod5Btn.style.display = 'block'
+      tOverlay.className = 'visible';
    });
 
+   openPod5Btn.addEventListener('click', function()
+   {
+      ldrOverlay.className = 'visible';
+   });
+
+   closeBtn1.addEventListener('click', function()
+   {
+      ucOverlay.className = 'hidden';
+   });
+
+   closeBtn2.addEventListener('click', function()
+   {
+      dwOverlay.className = 'hidden';
+   });
+
+   closeBtn3.addEventListener('click', function()
+   {
+      lOverlay.className = 'hidden';
+   });
+
+   closeBtn4.addEventListener('click', function()
+   {
+      tOverlay.className = 'hidden';
+   });
+
+   closeBtn5.addEventListener('click', function()
+   {
+      ldrOverlay.className = 'hidden';
+   });
+
+   tImg.addEventListener('click', function()
+   {
+      tImg.setAttribute('src','images/taco-click.jpg');
+   });
+
+   lImg.addEventListener('mouseover', function()
+   {
+      lImg.style.opacity = '1';
+   });
 })();

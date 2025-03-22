@@ -15,6 +15,11 @@ a
     display: none;
 }
 
+.visible
+{
+  display: block;
+}
+
 .uc-container 
 {
     position: relative;
@@ -255,6 +260,15 @@ header
   z-index: -1;
 }
 
+#nav
+{
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 7%;
+  left: 27%;
+}
+
 #ldr
 {
   width: 100px;
@@ -293,9 +307,6 @@ header
 
 button
 {
-  position: absolute;
-  bottom: 7%;
-  left: 51%;
   transition: all 0.5s;
   background: none;
   border: none;
@@ -376,7 +387,7 @@ button:hover
   left: 37%;
   width: 25%;
   height: auto;
-  animation: disappear 7s forwards;
+  animation: disappear 7s infinite;
 }
 
 #l-overlay p
@@ -424,7 +435,7 @@ p
   width: 25%;
 }
 
-.close
+#close-one, #close-two, #close-three, #close-four, #close-five
 {
   color: rgb(237, 228, 210);
   position: absolute;
@@ -434,7 +445,7 @@ p
   font-size: 30px;
 }
 
-.close:hover
+#close-one:hover, #close-two:hover, #close-three:hover, #close-four:hover, #close-five:hover
 {
   text-shadow: rgba(219,203,175,1) 0px 0px 20px;
 }
